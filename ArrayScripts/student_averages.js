@@ -10,12 +10,12 @@ let students = [
     ];
 
     for(i = 0; i < students.length; i++){
-        let studentName = students[i]
+        let studentName = students[i].name
         let score = 0;
-        for(j = 0; j < students.scores; j++){
-           score += students.scores[j]
+        for(j = 0; j < students[i].scores.length; j++){
+           score += students[i].scores[j];
            
         }
-        let studentAverage = score/(4);
-        console.log(`Student: ${studentName} Average Test Scores: ${studentAverage} `)
+        let studentAverage = parseFloat(score/ students[i].scores.length).toFixed(2);
+        console.log(`Student: ${studentName} --- Average Test Scores: ${studentAverage} `)
     }
