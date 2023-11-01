@@ -12,14 +12,6 @@ let tip = parseFloat((0.18 * myTotalBeforeTaxes).toFixed(2));
 let myFinalTotal = (myTotalBeforeTaxes + taxes + tip).toFixed(2);
 
 
-console.log(`Cost: $ ${myTotalBeforeTaxes}`);
-console.log(`Tax: $ ${taxes}`);
-console.log(`Tip : $ ${tip}`);
-console.log(`My Total : $ ${myFinalTotal}`);
-
-
-
-
 function getOrderTotal(orderItems) {
     // create total variable
     let orderTotal = 0;
@@ -33,3 +25,9 @@ function getOrderTotal(orderItems) {
     // return the total
     return orderTotal;
 }
+
+
+console.log(`Cost: $ ${myTotalBeforeTaxes}`);
+console.log(`Tax: $ ${taxes}`);
+console.log(`Tip : $ ${tip}`);
+console.log(`My Total : $ ${myFinalTotal}`);
